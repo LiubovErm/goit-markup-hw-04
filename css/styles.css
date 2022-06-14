@@ -113,20 +113,21 @@ ul {
 .contactinfo {
     display: inline-flex;
     align-items: center;
+    color: #757575;
 }
 .email-icon,
 .tel-icon {
     margin-right: 10px;
-    fill:#757575;
+    fill: currentColor;
 }
-.email-icon:hover,
+/* .email-icon:hover,
 .email-icon:focus {
     fill:var(--accent-color);
 }
 .tel-icon:hover,
 .tel-icon:focus {
     fill: var(--accent-color);
-}
+} */
 .contact > .contact-item:not(:last-child) {
     margin-right: 30px;
 }
