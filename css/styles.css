@@ -6,6 +6,7 @@
 /* колір фону 1 - #E5E5E5 */
 /* колір фону 2 - #F5F4FA */
 /* колір фону herofooter - #2F303A */
+/* колір іконки - #AFB1B8 */
 /* шрифти - Roboto, Raleway */
 
 :root {
@@ -17,6 +18,7 @@
     --primary-bg-color: #E5E5E5;
     --secondary-bg-color:#F5F4FA;
     --hero-bg-color:#2F303A;
+    --icon-color: #AFB1B8;
 }
 .visually-hidden {
     position: absolute;
@@ -113,21 +115,14 @@ ul {
 .contactinfo {
     display: inline-flex;
     align-items: center;
-    color: #757575;
+    color: var(--secondary-text-color);
 }
 .email-icon,
 .tel-icon {
     margin-right: 10px;
     fill: currentColor;
 }
-/* .email-icon:hover,
-.email-icon:focus {
-    fill:var(--accent-color);
-}
-.tel-icon:hover,
-.tel-icon:focus {
-    fill: var(--accent-color);
-} */
+
 .contact > .contact-item:not(:last-child) {
     margin-right: 30px;
 }
@@ -241,6 +236,7 @@ ul {
     padding-left: 100px;
     padding-right: 100px;
     margin-bottom: 30px;
+    border-radius: 4px;
 }
 /* about us */
 .about-us {
@@ -305,11 +301,20 @@ ul {
     justify-content: center;
     width: 44px;
     height: 44px;
+    border-radius: 50%;
+    color: var(--icon-color);
 }
 .social-item:not(:first-child) {
     margin-left: 10px;
 }
-
+.social-link:hover,
+.social-link:focus {
+    background-color: var(--accent-color);
+    color: var(--mainwhite-color);
+}
+.social-team {
+    fill: currentColor;
+}
 /* Clients */
 
 .clients-title {
@@ -324,19 +329,28 @@ ul {
     display: flex;
     justify-content: center;
 }
-.clients-item {
+
+.clients-icons {
+    color: var(--icon-color);
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    width: 170px;
+    height: 92px;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 170px;
-    height: 92px;
-    border: 1px solid #AFB1B8;
-    border-radius: 4px;
+}
+.clients-icons:hover,
+.clients-icons:focus {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
 }
 .clients-item:not(:first-child) {
     margin-left: 30px;
 }
-
+.icon-client {
+    fill: currentColor;
+}
 /* Footer */
 
 .footer {
@@ -402,8 +416,15 @@ address {
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
 }
+.footer-social-link:hover,
+.footer-social-link:focus {
+    background-color: var(--accent-color);
+}
 .footer-social-items:not(:first-child) {
     margin-left: 10px;
+}
+.social-icon {
+    fill:currentColor;
 }
 /* Portfolio */
 
