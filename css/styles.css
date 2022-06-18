@@ -56,7 +56,7 @@ ul {
     padding: 0;
 }
 .container {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
@@ -165,7 +165,7 @@ ul {
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
-    width: 696px;
+    max-width: 696px;
 }
 .reserv {
     background-color: var(--accent-color);
@@ -231,7 +231,7 @@ ul {
     justify-content: center;
     align-items: center;
     background-color: var(--secondary-bg-color);
-    width: 270px;
+    max-width: 270px;
     height: 120px;
     margin-bottom: 30px;
     border-radius: 4px;
